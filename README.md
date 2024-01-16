@@ -31,3 +31,8 @@ To use this quiz application, follow these steps:
 3. Click the "Next" button to proceed to the next question.
 4. After you answer all the questions, you will be presented with the result you received in the test.
 
+## Screenshots
+
+![Image1](Images/image1.png)
+
+![Image2](Images/image2.png)
