@@ -14,7 +14,10 @@ import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
 
-
+/**
+ * The Maman13Ex1Controller class is the controller for the JavaFX quiz application.
+ * It manages the interaction between the GUI components and the Question class.
+ */
 public class Maman13Ex1Controller {
 
     @FXML
@@ -47,7 +50,10 @@ public class Maman13Ex1Controller {
 
     private ChangeListener<Toggle> listener;
 
-
+    /**
+     * Initializes the controller. This method is automatically called after the FXML file is loaded.
+     * It sets up initial data, event listeners, and displays the first question.
+     */
     Question[] arrayOfQuestions = new Question[NUMBER_OF_QUESTIONS];
 
     @FXML
@@ -68,6 +74,9 @@ public class Maman13Ex1Controller {
 
     }
 
+    /**
+     * Initializes the array of questions with question objects and shuffles the order.
+     */
     private void initializingQuestions() {
         questionIndex = 0;
 
@@ -93,6 +102,9 @@ public class Maman13Ex1Controller {
         arrayOfQuestions = questionList.toArray(new Question[0]);
     }
 
+    /**
+     * Sets up a listener for the radio buttons. Checks the selected answer and provides feedback.
+     */
     private void listener() {
         listener = (ov, old_toggle, new_toggle) -> {
 
@@ -115,7 +127,11 @@ public class Maman13Ex1Controller {
         group.selectedToggleProperty().addListener(listener);
     }
 
-
+    /**
+     * Displays the current question on the GUI with shuffled answer choices.
+     *
+     * @param question The Question object containing the current question and answer choices.
+     */
     private void setQuestion(Question question) {
         needToCount = true;
 
@@ -144,6 +160,11 @@ public class Maman13Ex1Controller {
         rbFour.setSelected(false);
     }
 
+    /**
+     * Handles the "Next" button action. Moves to the next question and checks if the quiz is complete.
+     *
+     * @param ignoredEvent The ActionEvent triggered by the "Next" button.
+     */
     @FXML
     void onNextPress(ActionEvent ignoredEvent) {
         questionIndex++;
@@ -158,6 +179,11 @@ public class Maman13Ex1Controller {
 
     }
 
+    /**
+     * Handles the "Restart" button action. Resets the quiz to the first question.
+     *
+     * @param ignoredEvent The ActionEvent triggered by the "Restart" button.
+     */
     @FXML
     void onRestartPress(ActionEvent ignoredEvent) {
         questionIndex = 0;
