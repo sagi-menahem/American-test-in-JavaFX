@@ -21,7 +21,7 @@ The quiz contains a set of questions, and users can select their answers using R
 
 The `Maman13Ex1Controller` class provides the following features:
 
-### Features
+## Features
 
 1.  **Question Display:** Displays the current question along with answer choices using JavaFX TextFields and RadioButtons.
 
