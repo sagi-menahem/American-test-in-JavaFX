@@ -8,7 +8,7 @@ Task #3 for the 20554 java course of the Open University
 
 * [Quiz Questions](#quiz-questions)
 * [Controller Class](#controller-class)
-    * [Features:](#features)
+* [Features:](#features)
 * [Usage](#usage)
 * [Screenshots](#screenshots)
 * [Author](#author)
