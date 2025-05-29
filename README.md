@@ -2,7 +2,9 @@
 
 This project is a JavaFX implementation of a quiz application. It consists of a controller class, `Maman13Ex1Controller`, and utilizes JavaFX components such as RadioButtons and TextFields to create a simple quiz interface.
 
-Task #3 for the 20554 java course of the Open University
+Task #3 for the 20554 java course of the Open University.
+
+The full assignment (in Hebrew) is in the [Task 3.pdf](Task%203.pdf) file.
 
 ## Table of Contents
 
@@ -48,4 +50,4 @@ To use this quiz application, follow these steps:
 
 ## Author
 
-Sagi Menahem
+Sagi Menahem.
